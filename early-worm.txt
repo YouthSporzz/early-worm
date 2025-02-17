@@ -1,0 +1,114 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youth Sports Coaching Marketplace</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            text-align: center;
+        }
+        .header {
+            background-color: #007bff;
+            color: white;
+            padding: 20px;
+            font-size: 26px;
+            font-weight: bold;
+        }
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 30px;
+            background-color: white;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+        .headline {
+            font-size: 30px;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+        .subheadline {
+            font-size: 18px;
+            color: #555;
+            margin-bottom: 20px;
+        }
+        .benefits {
+            text-align: left;
+            margin-bottom: 20px;
+        }
+        .benefits ul {
+            list-style: none;
+            padding: 0;
+        }
+        .benefits li {
+            font-size: 16px;
+            margin-bottom: 10px;
+            padding-left: 25px;
+            position: relative;
+        }
+        .benefits li::before {
+            content: "✔";
+            color: #007bff;
+            position: absolute;
+            left: 0;
+        }
+        .signup-form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        input, button {
+            padding: 12px;
+            font-size: 16px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            width: 100%;
+        }
+        button {
+            background-color: #007bff;
+            color: white;
+            cursor: pointer;
+            border: none;
+            font-weight: bold;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+
+    <div class="header">Youth Sports Coaching Marketplace</div>
+
+
+    <div class="container">
+        <div class="headline">Connect with Aspiring Athletes</div>
+        <div class="subheadline">A marketplace for one-on-one training is launching soon!</div>
+        
+        <div class="benefits">
+            <ul>
+                <li>Expand Your Reach – Connect with dedicated young athletes.</li>
+                <li>Set Your Own Schedule – Offer training at your convenience.</li>
+                <li>Earn for Your Expertise – Monetize your coaching skills.</li>
+            </ul>
+        </div>
+
+
+        <form action="https://formspree.io/f/mnqkzwpa" method="POST" class="signup-form">
+            <input type="text" name="Full Name" placeholder="Full Name" required>
+            <input type="email" name="Email Address" placeholder="Email Address" required>
+            <input type="text" name="Sport(s) You Coach" placeholder="Sport(s) You Coach" required>
+            <input type="text" name="Location" placeholder="Location (City, State)" required>
+            <button type="submit">Join the Waitlist</button>
+        </form>
+    </div>
+
+
+</body>
+</html>
